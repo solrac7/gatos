@@ -10,7 +10,7 @@
 <body>
     
     <header>
-        <h1>Los gatos más locos de la web</h1>
+        <h1>Los gatos loquillos de la web</h1>
     </header>
 
     <div class="container">
@@ -74,7 +74,7 @@
                     <p class="item__name">El gato dormilón &#9656;</p>
                 </a>
 
-                <a class="item" href="">
+                <a class="item" href="http://www.fotoshumor.com/carpeta/1/original/642841347380787-gatos.jpg" target="_gato">
                     <div class="item__img-container">
                         <img class="item__img" src="http://www.fotoshumor.com/carpeta/1/original/642841347380787-gatos.jpg" alt="El gato lengüita">
                     </div>
@@ -118,8 +118,8 @@
         .items{
             position: relative;
             height: 215px;
-            overflow: hidden;
-            /* margin-right: -16px; */
+            overflow: auto;
+            margin-right: -16px;
             padding-bottom: 7px;
             
         }
@@ -142,15 +142,13 @@
         .item__container{
             display: flex;
             position: absolute;
-            overflow: auto;
-            width: 100%;
             -webkit-overflow-scrolling: touch;
             align-items: flex-start;
             padding-bottom: 7px;
             
         }
 
-        .item__container::-webkit-scrollbar {
+        .items::-webkit-scrollbar {
             width: 0px;  /* remove scrollbar space */
             background: transparent;  /* optional: just make scrollbar invisible */
             display: none;
@@ -181,7 +179,7 @@
             }
 
             .items{
-                height: auto;
+                overflow: visible
             }
 
             .item{
@@ -206,7 +204,5 @@
         }
     </style>
 
-    <script>
-    </script>
 </body>
 </html>
