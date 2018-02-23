@@ -73,6 +73,7 @@
             margin: 0;
             font-family: 'Kavivanar', cursive;
             -webkit-font-smoothing: antialiased;
+            background: #F0F0F0;
         }
 
         
@@ -98,17 +99,20 @@
 
         .items{
             position: relative;
-            height: 200px;
+            height: 215px;
             overflow: hidden;
             margin-right: -16px;
         }
-
-        
 
         .item{
             width: 230px;
             margin-right: 16px;
             flex: 1 0 230px;
+            background: white;
+            padding: 16px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            text-align: center;
         }
 
         .item__container{
@@ -121,6 +125,7 @@
 
         .item__container::-webkit-scrollbar {
             width: 0px;  /* remove scrollbar space */
+            height: 0px;
             background: transparent;  /* optional: just make scrollbar invisible */
             display: none;
         }
