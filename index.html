@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test reponsive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1>Los gatos más locos de la web</h1>
+    </header>
+
+    <div class="container">
+        
+        <section class="items">
+            <div class="item__container">
+                <div class="item">
+                    <img class="item__img" src="https://i.ytimg.com/vi/aaRLamtb1X4/maxresdefault.jpg" alt="gato risueño">
+                    <a class="item__enlace" href="https://i.ytimg.com/vi/aaRLamtb1X4/maxresdefault.jpg" target="_gato">El gato risueño</a>
+                </div>
+                
+                <div class="item">
+                    <img class="item__img" src="https://narodna-pravda.ua/wp-content/uploads/2017/10/4180715-1218478175_1067-1506444591-650-36688a7857-1507092556.jpg" alt="gato chelero">
+                    <a class="item__enlace" href="https://narodna-pravda.ua/wp-content/uploads/2017/10/4180715-1218478175_1067-1506444591-650-36688a7857-1507092556.jpg" target="_gato">El gato chelero</a>
+                </div>
+
+                <div class="item">
+                    <img class="item__img" src="http://asipasa.com/media/i/b37d8092-b94d-11e0-b7a3-0019b9fdfdec.jpg" alt="gato guasón">
+                    <a class="item__enlace" href="http://asipasa.com/media/i/b37d8092-b94d-11e0-b7a3-0019b9fdfdec.jpg" target="_gato">El gato guasón</a>
+                </div>
+
+                <div class="item">
+                    <img class="item__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2C1Nv5qwYoiusc0UCfpqRjOc-0rIDWdooG6koQ2yUGyhR0E_R" alt="gato yo no fui">
+                    <a class="item__enlace" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2C1Nv5qwYoiusc0UCfpqRjOc-0rIDWdooG6koQ2yUGyhR0E_R" target="_gato">El gato yo no fui</a>
+                </div>
+
+                <div class="item">
+                    <img class="item__img" src="http://www.noticiasvideosdiversion.com/wp-content/uploads/2017/12/videos-graciosos-fails-de-gatos-videos-para-morir-de-la-risa-los-gatos-mas-chistosos-750x561.jpg" alt="gato WTF">
+                    <a class="item__enlace" href="http://www.noticiasvideosdiversion.com/wp-content/uploads/2017/12/videos-graciosos-fails-de-gatos-videos-para-morir-de-la-risa-los-gatos-mas-chistosos-750x561.jpg" target="_gato">El gato WTF</a>
+                </div>
+
+                <div class="item">
+                    <img class="item__img" src="https://cdn.thinglink.me/api/image/798766635270799362/1240/10/scaletowidth" alt="gato guatón">
+                    <a class="item__enlace" href="https://cdn.thinglink.me/api/image/798766635270799362/1240/10/scaletowidth" target="_gato">El gato guatón</a>
+                </div>
+
+                <div class="item">
+                    <img class="item__img" src="http://img.desmotivaciones.es/201112/Chatsmouillesbain1.jpg" alt="gato mojado">
+                    <a class="item__enlace" href="http://img.desmotivaciones.es/201112/Chatsmouillesbain1.jpg" target="_gato">El gato mojado</a>
+                </div>
+
+                <div class="item">
+                    <img class="item__img" src="http://imagenesdegatos.org/wp-content/uploads/2018/02/maxresdefault-3.jpg" alt="gato dormilón">
+                    <a class="item__enlace" href="http://imagenesdegatos.org/wp-content/uploads/2018/02/maxresdefault-3.jpg" target="_gato">El gato dormilón</a>
+                </div>
+
+                <div class="item">
+                    <img class="item__img" src="http://www.fotoshumor.com/carpeta/1/original/642841347380787-gatos.jpg" alt="El gato lengüita">
+                    <a class="item__enlace" href="http://www.fotoshumor.com/carpeta/1/original/642841347380787-gatos.jpg" target="_gato">El gato lengüita</a>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+    
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: 'Kavivanar', cursive;
+        }
+
+        header{
+            background: #27af2d;
+            color: white;
+            padding: 0 16px;
+            text-align: center;
+            margin-bottom: 16px;
+            height: 56px;
+            line-height: 56px;
+        }
+
+        h1{
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .container{
+            padding: 0 16px;
+        }
+
+        .items{
+            position: relative;
+            height: 200px;
+            overflow: auto;
+            margin-right: -16px;
+        }
+
+        .item{
+            width: 230px;
+            margin-right: 16px;
+        }
+
+        .item__container{
+            display: flex;
+            position: absolute;
+        }
+
+        .item__img{
+            object-fit: cover;
+            height: 150px;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .item__enlace{
+            display: block;
+            color: red;
+
+        }
+
+        @media(min-width: 992px){
+            .container{
+                margin: 0 auto;
+                width: 800px;
+            }
+            .items{
+                height: auto;
+            }
+
+            .item{
+                margin-bottom: 32px;
+            }
+
+            .item__container{
+                justify-content: center;
+                position: relative;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+
+    <script>
+    </script>
+</body>
+</html>
