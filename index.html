@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Test reponsive</title>
+    <title>Test reponsive de cuchos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
 </head>
@@ -48,9 +48,9 @@
                 <a class="item" href="http://www.noticiasvideosdiversion.com/wp-content/uploads/2017/12/videos-graciosos-fails-de-gatos-videos-para-morir-de-la-risa-los-gatos-mas-chistosos-750x561.jpg"
                 target="_gato">
                     <div class="item__img-container">
-                        <img class="item__img" src="http://www.noticiasvideosdiversion.com/wp-content/uploads/2017/12/videos-graciosos-fails-de-gatos-videos-para-morir-de-la-risa-los-gatos-mas-chistosos-750x561.jpg" alt="gato WTF">
+                        <img class="item__img" src="http://www.noticiasvideosdiversion.com/wp-content/uploads/2017/12/videos-graciosos-fails-de-gatos-videos-para-morir-de-la-risa-los-gatos-mas-chistosos-750x561.jpg" alt="gato sorprendido">
                     </div>
-                    <p class="item__name">El gato WTF &#9656;</p>
+                    <p class="item__name">El gato sorprendido &#9656;</p>
                 </a>
 
                 <a class="item" href="https://cdn.thinglink.me/api/image/798766635270799362/1240/10/scaletowidth" target="_gato">
@@ -111,7 +111,6 @@
         }
 
         .container{
-            padding: 0 16px;
             position: relative;
         }
 
@@ -119,7 +118,6 @@
             position: relative;
             height: 215px;
             overflow: auto;
-            margin-right: -16px;
             padding-bottom: 7px;
             -webkit-overflow-scrolling: touch;
             
@@ -137,6 +135,11 @@
             overflow: hidden;
             text-decoration: none;
             transition: all .3s ease
+        }
+        
+
+        .item:first-of-type{
+            margin-left: 16px;
         }
 
 
@@ -174,8 +177,9 @@
 
         @media(min-width: 768px){
             .container{
+                padding: 0 16px;
                 margin: 0 auto;
-                width: 750px;
+                width: 730px;
             }
 
             .items{
@@ -184,6 +188,14 @@
 
             .item{
                 margin-bottom: 32px;
+            }
+
+            .item:nth-child(3n+0){
+                margin-right: 0;
+            }
+            
+            .item:first-of-type{
+                margin-left: 0;
             }
 
             .item__container{
